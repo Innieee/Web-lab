@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>나의 첫 Symantic 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="나의 첫 Symantic 페이지">
+    <meta property="og:title" content="나의 첫 Symantic 페이지">
+  </head>
+  
+  <body>
+    <header>
+      <!-- logo, nav, search-->
+      <nav id="main-menu"> <!-- id는 문서내에서 유일해야함!!-->
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section>
+    <h1>기사의 메인 타이틀</h1>
+    <p>Paragraph태그로 기사의 본문을 쓸 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>어른폰 가격 변동 추이</h2>
+      <p>어른폰은 2008년 출시 이후 꾸준히 가격이 상승해왔다...</p>
+    </section>
+
+    <section class="faq">
+      <h2>자주 묻는 질문</h2>
+      <details> <!--펼치기 기능(아코디언) 쉽게 만들수 있음-->
+        <summary>Q. 어른폰 언제 사야 하나요?</summary>
+        <span>A. 한 달 뒤에 사세여 :) </span>
+      </details>
+      <details>
+        <summary>Q. 통신사는 자유롭나요?</summary>
+        <span>A. 몰라여 :) </span>
+      </details>
+    </section>
+      <table> <!--데이터를 표현할 때 쓰는 것-->
+        <caption>표1. 중간고사 성적표</caption> <!--데이터 제목-->
+        <thead>
+          <tr> <!--tr=table row, 가로줄, 이걸 써줘야 한 가로줄 정의 가능-->
+            <th>번호</th> <!--table header-->
+            <th>점수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1번</td> <!-- table data-->
+            <td>100점</td>
+          </tr>
+          <tr>
+            <td>2번</td> <!-- table data-->
+            <td>80점</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>평균</td>
+            <td>90</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <article>
+      <h2>당신의 의견을 제출하세요</h2>
+      <form action="#" method="post">
+        <input type="text" id="opinion" name="opinion">
+      </form>
+    </article>
+    
+    <article id="featured-posts"> <!--같이 보면 좋은 주제, 반복되는 구조-->
+      <article class="featured-post">
+        <h2>은하 13 출시 임박</h2>
+      </article>
+      <article class="featured-post">
+        <h2>어른폰 14 싸게 사는 법</h2>
+      </article>
+    </article>
+
+    <aside> <!--메인 컨텐츠와 관련 많이 없는, 목차같은 것들, 말그대로 사이드메뉴-->
+      <h2>Featured Comments</h2>
+      <ul>
+        <li>우와 대박 너무 좋네요</li>
+        <li>역시 최고입니다. 짱짱!</li>
+      </ul>
+    </aside>
+      
+    <footer>
+      <span>Copyrights 2020-2022 by InnieJjang ALL RIGHTS RESERVED.</span>
+    </footer>
+      
+  </body>
+</html>
