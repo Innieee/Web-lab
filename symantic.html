@@ -66,12 +66,47 @@
         </tfoot>
       </table>
     </main>
+    <article>
+      <p>
+        <strong>Strong</strong>과 
+        <b>b</b>의 차이가 느껴지십니까?
+        혹은, <em>em</em>과 
+        <i>i</i>의 차이가 느껴지십니까?
+      </p>
+    </article>
 
     <article>
       <h2>당신의 의견을 제출하세요</h2>
       <form action="#" method="post">
+        <label for="u-name">유저네임</label> <!--라벨링을 해줘야 무슨칸인지 알아-->
+        <input type="text" id="uname" name="uname">
+        <label for="u-pw">패스워드</label>
+        <input type="password" id="u-pw" name="u-pw">
+        <span>의견</span> <!--span과 label의 차이점-->
         <input type="text" id="opinion" name="opinion">
+        <input type="submit">
+        <button type="reset">취소</button>
       </form>
+    </article>
+
+    <article>
+      <label for="user-movie">Choose your favorite movie</label>
+<input list="movies" id="user-movie" name="movie">
+<datalist id="movies">
+  <option value="Dune"></option>
+  <option value="Arrival"></option>
+  <option value="Blade Runner 2049"></option>
+</datalist>
+    </article>
+
+    <article>
+      <label for="coffee-menu">Choose a menu:</label>
+      <select name="coffee" if="coffee-menu">
+        <option value="">--메뉴를 고르세요--</option>
+        <option value="Americano">--Americano--</option>
+        <option value="latte">--Cafe latte--</option>
+        <option value="mocha">--Cafe mocha--</option>
+      </select>
     </article>
     
     <article id="featured-posts"> <!--같이 보면 좋은 주제, 반복되는 구조-->
