@@ -5,9 +5,54 @@ h4,
 h5, 
 h6 {
   font-family: 'NanumSquare', san-serif;
+  text-align: center;
+  letter-spacing: -0.03em;
+  word-spacing: 0.3em;
   color: lightgreen
+
 }
 
-p {
+p.subtitle{
   font-family: 'Jua', sans-serif;
+}
+.main-text{
+  font-weight: 200;
+  font-size: 20px;
+  word-spacing: 0.7em;
+  line-height: 1.3em;
+}
+
+.main-wrapper{
+  width: 500px;
+  margin: 0 auto; 
+}
+
+
+.div-pad {
+  padding: 15px 30px 40px 10px;
+}
+
+.div-margin{
+  margin: 10px;
+}
+
+.box-a {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: pink;
+}
+
+.box-b {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: yellowgreen;
+}
+
+.box-c {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: violet;
 }
