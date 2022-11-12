@@ -56,3 +56,26 @@ p.subtitle{
   display: inline-block;
   background-color: violet;
 }
+
+/* CSS flex*/
+
+.content-wrapper {
+  display: flex; /*반응형 웹을 구현할 수 있다, ex. 상세페이지 상품 (공통된 컨텐츠를 감싼 다음 flex만 붙여주면)나열*/
+  flex-direction: row; 
+}
+
+.flex-a {
+  width: 300px;
+  height: 100px;
+  background-color: blue;
+}
+.flex-b {
+  width: 300px;
+  height: 100px;
+  background-color: skyblue;
+}
+.flex-c {
+  width: 300px;
+  height: 100px;
+  background-color: darkblue;
+}
